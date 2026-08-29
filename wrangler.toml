@@ -1,0 +1,6 @@
+name = "rjc-film"
+compatibility_date = "2026-08-29"
+
+# This starter is Vite-based.
+# Build command: npm run build
+# Output directory: dist

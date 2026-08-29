@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>R.JC Film</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">R.JC <span>FILM</span></div>
+      <button class="icon-btn" aria-label="Notifications">🔔</button>
+    </header>
+
+    <main id="content" class="content">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">VISIONARY SUCCESS GROUP</p>
+          <h1>Your Story. Your Screen.</h1>
+          <p>Watch films, discover creators, and share your own videos.</p>
+          <button class="primary-btn" data-action="watch">▶ Watch Now</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Featured Films</h2>
+          <button class="link-btn">See all</button>
+        </div>
+        <div class="cards" id="featuredCards"></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-tab="home"><span>🏠</span><small>Home</small></button>
+      <button class="nav-item" data-tab="shorts"><span>🎬</span><small>Shorts</small></button>
+      <button class="create-btn" data-tab="create" aria-label="Create">+</button>
+      <button class="nav-item" data-tab="subscriptions"><span>❤️</span><small>Subscriptions</small></button>
+      <button class="nav-item" data-tab="you"><span>👤</span><small>You</small></button>
+    </nav>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
