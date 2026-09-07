@@ -95,3 +95,8 @@ button { font: inherit; }
   .content { padding: 14px; }
   .hero { min-height: 260px; padding: 22px; }
 }
+.logo{
+  width:70px;
+  height:70px;
+  object-fit:contain;
+}
