@@ -56,12 +56,13 @@ function renderTab(tab) {
     subscriptions: ['Subscriptions', 'New videos from creators you follow will appear here.'],
     you: ['You', 'Your profile, uploads, history, playlists, and settings.']
   }
-
+if(tab==='create'){
+  
   const [title, text] = labels[tab]
   content.innerHTML = `<section class="empty-state"><div><h2>${title}</h2><p>${text}</p></div></section>`
 }
 
-navButtons.forEach(btn => {
+navButtons.forEach(btn => { 
   btn.addEventListener('click', () => {
     const tab = btn.dataset.tab
     setActive(tab)
