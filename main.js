@@ -57,7 +57,7 @@ function renderTab(tab) {
     you: ['You', 'Your profile, uploads, history, playlists, and settings.']
   }
 if(tab==='create'){
-  
+ content.innerHTML='<section class="empty-state"><div><h2>Create</h2><p>Upload a film,episode,or short video.</p><input type="file"id="videoUpload" accept="video/*"></div></section>'; 
   const [title, text] = labels[tab]
   content.innerHTML = `<section class="empty-state"><div><h2>${title}</h2><p>${text}</p></div></section>`
 }
