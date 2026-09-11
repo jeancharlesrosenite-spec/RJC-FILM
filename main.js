@@ -71,7 +71,7 @@ navButtons.forEach(btn => {
     renderTab(tab)
   })
 })
-
+document.addEventListener('change',async(e)=>{if(e.target&&e.target.id==='videoUpload'){const file=e.target.files[o];if(! file)return;const fileName='${Date.now()}-${file.name};const{data,error}=await supabase.storage.from('videos').upload(fileName,file);if(error){alert('Upload failed:'+error.message);return;}alert (Video uploaded successfully!');}}) 
 renderCards()
 
 console.log('Supabase ready:', Boolean(supabase))
